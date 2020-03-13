@@ -1,0 +1,10 @@
+import numpy as np
+
+np.random.seed(612)
+a=np.random.uniform(0,1,1000)
+num1=int(input("请输入一个1-100之间的整数："))
+num2=1
+for index in range(num1,1000):
+    if index%num1==0:
+        print("%d      %d        %f"%(num2,index,a[index]))
+        num2+=1
